@@ -41,16 +41,24 @@ h4{
 }
 
 header{
-	width: 100%;
+  display: grid;
 	border-bottom: solid 3px black;
 	margin: 20px 0 40px 0;
   display: inline-block;
 }
 
 #terug{
-	position: absolute;
-  top: 30px;
+  grid-column: 1/2;
 }
+h1{
+  grid-column: 2/3;
+}
+#nieuw{
+  grid-column: 3/4;
+}
+
+
+
 a, a:visited{
 	text-decoration: none;
 	color: black;
