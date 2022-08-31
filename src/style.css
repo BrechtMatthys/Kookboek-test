@@ -275,10 +275,42 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-/* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-  body{
+  body, footer{
     width: 95%;
   }
 
-} */
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+
+  body, footer{
+    width: 95%;
+    background-color: pink;
+  }
+
+  /*filter-row*/
+  #zoeken{
+    grid-template-columns: 1fr;
+  }
+  #myInput {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #myBtnContainer{
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+/*landscape phone*/
+
+@media (max-height: 505px) and (orientation:landscape) {
+
+  body, footer{
+    background-color: green;
+  }
+
+}
